@@ -1,0 +1,12 @@
+/* Music box additions */
+.system-control.is-playing { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.detail-copy .retro-button + .retro-button { margin: 8px 0 0 8px; }
+.taskbar-now { display: inline-flex; align-items: center; gap: 3px; color: var(--accent); font: 600 .58rem 'IBM Plex Mono', monospace; white-space: nowrap; }
+.taskbar-now i { display: block; width: 3px; height: 12px; border-radius: 2px; background: currentColor; transform-origin: bottom; animation: eq-bounce 1s ease-in-out infinite; }
+.taskbar-now i:nth-child(2) { animation-delay: -.35s; }
+.taskbar-now i:nth-child(3) { animation-delay: -.7s; }
+.taskbar-now b { margin-left: 5px; }
+@keyframes eq-bounce { 0%, 100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) { .taskbar-now i { animation: none; } }
+@media (max-width: 640px) { .taskbar-now b { display: none; } }
+.credits-line { max-width: 760px; margin: 0 auto; padding: 4px 16px 24px; color: var(--muted-text); text-align: center; font: 500 .6rem/1.8 'IBM Plex Mono', monospace; }
